@@ -4,8 +4,8 @@ html {
 
 table {
     width: 100%;
-    overflow-x: auto;
-    display: block;
+    table-layout: fixed;
+    word-break: break-all;
 }
 
 div {
@@ -14,7 +14,11 @@ div {
 }
 
 th {
-    text-align: left;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
 }
 
 img { 
@@ -36,6 +40,15 @@ button {
     margin-right: auto;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+#profilePictureDiv {
+    text-align: center;
+}
+
+#profileImageDiv {
+    height: 100px;
+    width: 100px;
 }
 
 #statusMessage {
